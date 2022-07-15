@@ -48,9 +48,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 //error handling middleware
-app.use((err, req, res) => {
-    res.status(500).send({message: err.message});
-});
+// app.use((err, req, res) => {
+//     res.status(500).send({message: err.message});
+// });
 
 //server 
 app.listen(PORT, () => {
